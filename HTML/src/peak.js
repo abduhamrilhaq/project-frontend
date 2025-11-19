@@ -39,11 +39,9 @@ function autoSDown() {
         document.body.style.overflow = "auto";
         clearInterval(flicker)
         let div = document.getElementById("EnterText");
-        div.classList.remove("text-white");
-        div.classList.add("text-black");
+        div.remove()
         let div1 = document.getElementById("PressText");
-        div1.classList.remove("text-white");
-        div1.classList.add("text-black");
+        div1.textContent = "{NGAWI CITY | WEB INFOGRAPHIC}"
     }
     console.log(speed, window.scrollY)
 }
@@ -78,12 +76,21 @@ function popItem2() {
 
 function popTextItem2() {
     let textItem1 = document.getElementById("ItemText2")
-    let negateBy = 2025 * (window.scrollY / 1300)
-    negateBy = Math.min(Math.max(negateBy, 0), 2025)
+    let negateBy = 2015 * (window.scrollY / 1300)
+    negateBy = Math.min(Math.max(negateBy, 0), 2015)
     let xPos =  3000 - negateBy
     textItem1.style.transform = `translateX(${xPos}px) translateY(-100px)`
     textItem1.style.opacity = window.scrollY / 1300
 }
+
+let CIP1 = document.getElementById("culinaryItemParent1")
+CIP1.addEventListener("mouseover", () => {
+   CIP1.style.transform = `scale(1.1)`
+})
+
+CIP1.addEventListener("mouseleave", () => {
+   CIP1.style.transform = `scale(1.0)`
+})
 
 let oscillate = false;
 
