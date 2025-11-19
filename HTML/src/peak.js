@@ -121,29 +121,57 @@ function quotePop() {
 let CIP1 = document.getElementById("culinaryItem1")
 let CIP2 = document.getElementById("culinaryItem2")
 let CIP3 = document.getElementById("culinaryItem3")
+let Loc1 = document.getElementById("location1")
+let Loc2 = document.getElementById("location2")
 
 CIP1.addEventListener("mouseover", () => {
    CIP1.style.transform = `scale(1.05)`
+   CIP1.style.cursor = 'pointer'
 })
 
 CIP1.addEventListener("mouseleave", () => {
    CIP1.style.transform = `scale(1.0)`
+   CIP1.style.cursor = 'default'
 })
 
 CIP2.addEventListener("mouseover", () => {
    CIP2.style.transform = `scale(1.05)`
+   CIP2.style.cursor = 'pointer'
 })
 
 CIP2.addEventListener("mouseleave", () => {
    CIP2.style.transform = `scale(1.0)`
+   CIP2.style.cursor = 'default'
 })
 
 CIP3.addEventListener("mouseover", () => {
    CIP3.style.transform = `scale(1.05)`
+   CIP3.style.cursor = 'pointer'
 })
 
 CIP3.addEventListener("mouseleave", () => {
    CIP3.style.transform = `scale(1.0)`
+   CIP3.style.cursor = 'default'
+})
+
+Loc1.addEventListener("mouseover", () => {
+    Loc1.style.color = 'blue'
+    Loc1.style.cursor = 'pointer'
+})
+
+Loc1.addEventListener("mouseleave", () => {
+    Loc1.style.color = 'white'
+    Loc1.style.cursor = 'default'
+})
+
+Loc2.addEventListener("mouseover", () => {
+    Loc2.style.color = 'blue'
+    Loc2.style.cursor = 'pointer'
+})
+
+Loc2.addEventListener("mouseleave", () => {
+    Loc2.style.color = 'white'
+    Loc2.style.cursor = 'default'
 })
 
 function culinaryOp() {
