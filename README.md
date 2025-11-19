@@ -1,3 +1,3 @@
 # project frontend
 diky cilok
-NotYetGooning
+Riski Cilok
