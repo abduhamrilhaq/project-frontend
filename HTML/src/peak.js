@@ -20,7 +20,8 @@ document.addEventListener("scroll", function(event) {
     popTextItem()
     popItem2()
     popTextItem2()
-    console.log("scrolled")
+    culinaryOp()
+    quotePop()
 })
 
 function autoSDown() {
@@ -43,16 +44,23 @@ function autoSDown() {
         let div1 = document.getElementById("PressText");
         div1.textContent = "{NGAWI CITY | WEB INFOGRAPHIC}"
     }
-    console.log(speed, window.scrollY)
 }
 
+let image1 = document.getElementById("item1")
+let image2 = document.getElementById("item2")
+
 function popItem() {
-    let image1 = document.getElementById("item1")
     let negateBy = 900 * (window.scrollY / 812)
     negateBy = Math.min(Math.max(negateBy, 0), 900)
     let xPos = (2000 - negateBy)
     image1.style.transform = `translateX(${xPos}px) translateY(0px)`
-    image1.style.opacity = window.scrollY / 812
+    let y0 = 1
+    let yN = 2
+    let t = window.scrollY - 295
+    let n = 812 - 295
+
+    let interpolatedVal = expinterpolate(y0, yN, t, n) / 2
+    image1.style.opacity = interpolatedVal
 }
 
 function popTextItem() {
@@ -61,36 +69,100 @@ function popTextItem() {
     addBy = Math.min(Math.max(addBy, 0), 400)
     let xPos = -200 + addBy
     textItem1.style.transform = `translateX(${xPos}px) translateY(-100px)`
-    textItem1.style.opacity = window.scrollY / 812
+    let y0 = 1
+    let yN = 2
+    let t = window.scrollY - 295
+    let n = 812 - 295
+
+    let interpolatedVal = expinterpolate(y0, yN, t, n) / 2
+    textItem1.style.opacity = interpolatedVal
 }
 
 function popItem2() {
-    let image1 = document.getElementById("item2")
-    let addBy = 1200 * (window.scrollY / 1300)
+    let addBy = 1200 * (window.scrollY / 1200)
     addBy = Math.min(Math.max(addBy, 0), 1200)
     let xPos = (-1000 + addBy)
-    image1.style.transform = `translateX(${xPos}px) translateY(0px)`
-    image1.style.opacity = window.scrollY / 1300
-    console.log(xPos)
+    image2.style.transform = `translateX(${xPos}px) translateY(0px)`
+    let y0 = 1
+    let yN = 2
+    let t = window.scrollY - 816
+    let n = 1200 - 816
+
+    let interpolatedVal = expinterpolate(y0, yN, t, n) / 2
+    image2.style.opacity = interpolatedVal
 }
 
 function popTextItem2() {
     let textItem1 = document.getElementById("ItemText2")
-    let negateBy = 2015 * (window.scrollY / 1300)
+    let negateBy = 2015 * (window.scrollY / 1200)
     negateBy = Math.min(Math.max(negateBy, 0), 2015)
     let xPos =  3000 - negateBy
     textItem1.style.transform = `translateX(${xPos}px) translateY(-100px)`
-    textItem1.style.opacity = window.scrollY / 1300
+    let y0 = 1
+    let yN = 2
+    let t = window.scrollY - 816
+    let n = 1200 - 816
+
+    let interpolatedVal = expinterpolate(y0, yN, t, n) / 2
+    textItem1.style.opacity = interpolatedVal
 }
 
-let CIP1 = document.getElementById("culinaryItemParent1")
+function quotePop() {
+    let quoteText = "One cannot think well, love well, sleep well, if one has not dined well - Virginia Woolf"
+    let quote1 = document.getElementById("quote1")
+    let t = window.scrollY - 2029
+    let n = 2333 - 2029
+
+    let interpolatedVal = Math.round(88 * (t / n))
+    quote1.textContent = quoteText.substring(0, interpolatedVal)
+    console.log(interpolatedVal, "|", "Val")
+}
+
+let CIP1 = document.getElementById("culinaryItem1")
+let CIP2 = document.getElementById("culinaryItem2")
+let CIP3 = document.getElementById("culinaryItem3")
+
 CIP1.addEventListener("mouseover", () => {
-   CIP1.style.transform = `scale(1.1)`
+   CIP1.style.transform = `scale(1.05)`
 })
 
 CIP1.addEventListener("mouseleave", () => {
    CIP1.style.transform = `scale(1.0)`
 })
+
+CIP2.addEventListener("mouseover", () => {
+   CIP2.style.transform = `scale(1.05)`
+})
+
+CIP2.addEventListener("mouseleave", () => {
+   CIP2.style.transform = `scale(1.0)`
+})
+
+CIP3.addEventListener("mouseover", () => {
+   CIP3.style.transform = `scale(1.05)`
+})
+
+CIP3.addEventListener("mouseleave", () => {
+   CIP3.style.transform = `scale(1.0)`
+})
+
+function culinaryOp() {
+    let y0 = 1
+    let yN = 2
+    let t = window.scrollY - 1621
+    let n = 2233 - 1621
+
+    let interpolatedVal = expinterpolate(y0, yN, t, n) / 2
+    CIP1.style.opacity = interpolatedVal
+    CIP2.style.opacity = interpolatedVal
+    CIP3.style.opacity = interpolatedVal
+}
+
+function expinterpolate(y0, yN, t, n) {
+    let val = y0 * (yN / y0) ** (t/n)
+
+    return val
+}
 
 let oscillate = false;
 
