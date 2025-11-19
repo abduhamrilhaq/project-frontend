@@ -675,8 +675,20 @@
   .pt-32 {
     padding-top: calc(var(--spacing) * 32);
   }
+  .pb-16 {
+    padding-bottom: calc(var(--spacing) * 16);
+  }
+  .pb-32 {
+    padding-bottom: calc(var(--spacing) * 32);
+  }
   .pb-40 {
     padding-bottom: calc(var(--spacing) * 40);
+  }
+  .pb-64 {
+    padding-bottom: calc(var(--spacing) * 64);
+  }
+  .pb-96 {
+    padding-bottom: calc(var(--spacing) * 96);
   }
   .pl-3 {
     padding-left: calc(var(--spacing) * 3);
