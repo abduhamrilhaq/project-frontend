@@ -22,6 +22,9 @@ document.addEventListener("scroll", function(event) {
     popTextItem2()
     culinaryOp()
     quotePop()
+    alunPop()
+    etPop()
+    asalPop()
 })
 
 function autoSDown() {
@@ -43,6 +46,7 @@ function autoSDown() {
         div.remove()
         let div1 = document.getElementById("PressText");
         div1.textContent = "{NGAWI CITY | WEB INFOGRAPHIC}"
+        console.log("succeeded")
     }
 }
 
@@ -111,11 +115,49 @@ function quotePop() {
     let quoteText = "One cannot think well, love well, sleep well, if one has not dined well - Virginia Woolf"
     let quote1 = document.getElementById("quote1")
     let t = window.scrollY - 2029
-    let n = 2333 - 2029
+    let n = 2291 - 2029
 
     let interpolatedVal = Math.round(88 * (t / n))
     quote1.textContent = quoteText.substring(0, interpolatedVal)
-    console.log(interpolatedVal, "|", "Val")
+}
+
+let alun = document.getElementById("alun")
+
+function alunPop() {
+    let y0 = 1
+    let yN = 2
+    let t = window.scrollY - 2701
+    let n = 3619 - 2701
+
+    let interpolatedVal = expinterpolate(y0, yN, t, n) / 2
+    interpolatedVal = Math.min(Math.max(interpolatedVal, 0), 1)
+    alun.style.opacity = interpolatedVal
+    alun.style.transform = `scale(${interpolatedVal})`
+}
+
+let etimologi = document.getElementById("etimologi")
+let asal = document.getElementById("asal")
+
+function etPop() {
+    let y0 = -225
+    let yN = -400
+    let t = window.scrollY - 3609
+    let n = 4129 - 3609
+
+    let interpolatedVal = expinterpolate(y0, yN, t, n)
+    interpolatedVal = Math.min(Math.max(interpolatedVal, -400), -225)
+    etimologi.style.transform = `translateX(550px) translateY(${interpolatedVal}px)`
+}
+
+function asalPop() {
+    let y0 = -400
+    let yN = -600
+    let t = window.scrollY - 4113
+    let n = 4521 - 4113
+
+    let interpolatedVal = expinterpolate(y0, yN, t, n)
+    interpolatedVal = Math.min(Math.max(interpolatedVal, -600), -400)
+    asal.style.transform = `translateX(550px) translateY(${interpolatedVal}px)`
 }
 
 let CIP1 = document.getElementById("culinaryItem1")
@@ -164,6 +206,10 @@ Loc1.addEventListener("mouseleave", () => {
     Loc1.style.cursor = 'default'
 })
 
+Loc1.addEventListener("click", () => {
+    window.open("https://maps.app.goo.gl/iYz2p153mjim1kpU7")
+})
+
 Loc2.addEventListener("mouseover", () => {
     Loc2.style.color = 'blue'
     Loc2.style.cursor = 'pointer'
@@ -172,6 +218,10 @@ Loc2.addEventListener("mouseover", () => {
 Loc2.addEventListener("mouseleave", () => {
     Loc2.style.color = 'white'
     Loc2.style.cursor = 'default'
+})
+
+Loc2.addEventListener("click", () => {
+    window.open("https://maps.app.goo.gl/AkKebMtVt1g65dMd8")
 })
 
 function culinaryOp() {
