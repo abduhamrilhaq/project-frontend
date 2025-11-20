@@ -139,24 +139,24 @@ let etimologi = document.getElementById("etimologi")
 let asal = document.getElementById("asal")
 
 function etPop() {
-    let y0 = -225
-    let yN = -400
-    let t = window.scrollY - 3609
-    let n = 4129 - 3609
+    let y0 = -550
+    let yN = -750
+    let t = window.scrollY - 3617
+    let n = 4035 - 3617
 
     let interpolatedVal = expinterpolate(y0, yN, t, n)
-    interpolatedVal = Math.min(Math.max(interpolatedVal, -400), -225)
+    interpolatedVal = Math.min(Math.max(interpolatedVal, -750), -550)
     etimologi.style.transform = `translateX(550px) translateY(${interpolatedVal}px)`
 }
 
 function asalPop() {
-    let y0 = -400
-    let yN = -600
-    let t = window.scrollY - 4113
-    let n = 4521 - 4113
+    let y0 = -350
+    let yN = -475
+    let t = window.scrollY - 4025
+    let n = 4331 - 4025
 
     let interpolatedVal = expinterpolate(y0, yN, t, n)
-    interpolatedVal = Math.min(Math.max(interpolatedVal, -600), -400)
+    interpolatedVal = Math.min(Math.max(interpolatedVal, -475), -350)
     asal.style.transform = `translateX(550px) translateY(${interpolatedVal}px)`
 }
 
