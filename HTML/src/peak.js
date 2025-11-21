@@ -393,6 +393,13 @@ let CIP5 = document.getElementById("culinaryItem5")
 let CIP6 = document.getElementById("culinaryItem6")
 let Loc1 = document.getElementById("location1")
 let Loc2 = document.getElementById("location2")
+let Loc3 = document.getElementById("location3")
+let Loc4 = document.getElementById("location4")
+let Loc5 = document.getElementById("location5")
+let Loc6 = document.getElementById("location6")
+let Loc7 = document.getElementById("location7")
+let Loc8 = document.getElementById("location8")
+let Loc9 = document.getElementById("location9")
 
 CIP1.addEventListener("mouseover", () => {
    CIP1.style.transform = `scale(1.05)`
@@ -479,6 +486,104 @@ Loc2.addEventListener("mouseleave", () => {
 })
 
 Loc2.addEventListener("click", () => {
+    window.open("https://maps.app.goo.gl/AkKebMtVt1g65dMd8")
+})
+
+Loc3.addEventListener("mouseover", () => {
+    Loc3.style.color = 'blue'
+    Loc3.style.cursor = 'pointer'
+})
+
+Loc3.addEventListener("mouseleave", () => {
+    Loc3.style.color = 'white'
+    Loc3.style.cursor = 'default'
+})
+
+Loc3.addEventListener("click", () => {
+    window.open("https://maps.app.goo.gl/AkKebMtVt1g65dMd8")
+})
+
+Loc4.addEventListener("mouseover", () => {
+    Loc4.style.color = 'blue'
+    Loc4.style.cursor = 'pointer'
+})
+
+Loc4.addEventListener("mouseleave", () => {
+    Loc4.style.color = 'white'
+    Loc4.style.cursor = 'default'
+})
+
+Loc4.addEventListener("click", () => {
+    window.open("https://maps.app.goo.gl/AkKebMtVt1g65dMd8")
+})
+
+Loc5.addEventListener("mouseover", () => {
+    Loc5.style.color = 'blue'
+    Loc5.style.cursor = 'pointer'
+})
+
+Loc5.addEventListener("mouseleave", () => {
+    Loc5.style.color = 'white'
+    Loc5.style.cursor = 'default'
+})
+
+Loc5.addEventListener("click", () => {
+    window.open("https://maps.app.goo.gl/AkKebMtVt1g65dMd8")
+})
+
+Loc6.addEventListener("mouseover", () => {
+    Loc6.style.color = 'blue'
+    Loc6.style.cursor = 'pointer'
+})
+
+Loc6.addEventListener("mouseleave", () => {
+    Loc6.style.color = 'white'
+    Loc6.style.cursor = 'default'
+})
+
+Loc6.addEventListener("click", () => {
+    window.open("https://maps.app.goo.gl/AkKebMtVt1g65dMd8")
+})
+
+Loc7.addEventListener("mouseover", () => {
+    Loc7.style.color = 'blue'
+    Loc7.style.cursor = 'pointer'
+})
+
+Loc7.addEventListener("mouseleave", () => {
+    Loc7.style.color = 'white'
+    Loc7.style.cursor = 'default'
+})
+
+Loc7.addEventListener("click", () => {
+    window.open("https://maps.app.goo.gl/AkKebMtVt1g65dMd8")
+})
+
+Loc8.addEventListener("mouseover", () => {
+    Loc8.style.color = 'blue'
+    Loc8.style.cursor = 'pointer'
+})
+
+Loc8.addEventListener("mouseleave", () => {
+    Loc8.style.color = 'white'
+    Loc8.style.cursor = 'default'
+})
+
+Loc8.addEventListener("click", () => {
+    window.open("https://maps.app.goo.gl/AkKebMtVt1g65dMd8")
+})
+
+Loc9.addEventListener("mouseover", () => {
+    Loc9.style.color = 'blue'
+    Loc9.style.cursor = 'pointer'
+})
+
+Loc9.addEventListener("mouseleave", () => {
+    Loc9.style.color = 'white'
+    Loc9.style.cursor = 'default'
+})
+
+Loc9.addEventListener("click", () => {
     window.open("https://maps.app.goo.gl/AkKebMtVt1g65dMd8")
 })
 
