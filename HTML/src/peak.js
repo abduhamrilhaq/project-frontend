@@ -20,7 +20,22 @@ document.addEventListener("scroll", function(event) {
     popTextItem()
     popItem2()
     popTextItem2()
+    popItem3()
+    popTextItem3()
+    popItem4()
+    popTextItem4()
+    popItem5()
+    popTextItem5()
+    popItem6()
+    popTextItem6()
+    popItem7()
+    popTextItem7()
+    popItem8()
+    popTextItem8()
+    popItem9()
+    popTextItem9()
     culinaryOp()
+    culinaryOp1()
     quotePop()
     alunPop()
     etPop()
@@ -52,6 +67,22 @@ function autoSDown() {
 
 let image1 = document.getElementById("item1")
 let image2 = document.getElementById("item2")
+let image3 = document.getElementById("item3")
+let image4 = document.getElementById("item4")
+let image5 = document.getElementById("item5")
+let image6 = document.getElementById("item6")
+let image7 = document.getElementById("item7")
+let image8 = document.getElementById("item8")
+let image9 = document.getElementById("item9")
+let textItem1 = document.getElementById("ItemText1")
+let textItem2 = document.getElementById("ItemText2")
+let textItem3 = document.getElementById("ItemText3")
+let textItem4 = document.getElementById("ItemText4")
+let textItem5 = document.getElementById("ItemText5")
+let textItem6 = document.getElementById("ItemText6")
+let textItem7 = document.getElementById("ItemText7")
+let textItem8 = document.getElementById("ItemText8")
+let textItem9 = document.getElementById("ItemText9")
 
 function popItem() {
     let negateBy = 900 * (window.scrollY / 812)
@@ -68,7 +99,6 @@ function popItem() {
 }
 
 function popTextItem() {
-    let textItem1 = document.getElementById("ItemText1")
     let addBy = 400 * (window.scrollY / 812)
     addBy = Math.min(Math.max(addBy, 0), 400)
     let xPos = -200 + addBy
@@ -97,18 +127,213 @@ function popItem2() {
 }
 
 function popTextItem2() {
-    let textItem1 = document.getElementById("ItemText2")
     let negateBy = 2015 * (window.scrollY / 1200)
     negateBy = Math.min(Math.max(negateBy, 0), 2015)
     let xPos =  3000 - negateBy
-    textItem1.style.transform = `translateX(${xPos}px) translateY(-100px)`
+    textItem2.style.transform = `translateX(${xPos}px) translateY(-100px)`
     let y0 = 1
     let yN = 2
     let t = window.scrollY - 816
     let n = 1200 - 816
 
     let interpolatedVal = expinterpolate(y0, yN, t, n) / 2
-    textItem1.style.opacity = interpolatedVal
+    textItem2.style.opacity = interpolatedVal
+}
+
+function popItem3() {
+    let negateBy = 900 * (window.scrollY / 1912)
+    negateBy = Math.min(Math.max(negateBy, 0), 900)
+    let xPos = (2000 - negateBy)
+    image3.style.transform = `translateX(${xPos}px) translateY(0px)`
+    let y0 = 1
+    let yN = 2
+    let t = window.scrollY - 1312
+    let n = 1912 - 1312
+
+    let interpolatedVal = expinterpolate(y0, yN, t, n) / 2
+    image3.style.opacity = interpolatedVal
+}
+
+function popTextItem3() {
+    let addBy = 400 * (window.scrollY / 1912)
+    addBy = Math.min(Math.max(addBy, 0), 400)
+    let xPos = -200 + addBy
+    textItem3.style.transform = `translateX(${xPos}px) translateY(-100px)`
+    let y0 = 1
+    let yN = 2
+    let t = window.scrollY - 1312
+    let n = 1912 - 1312
+
+    let interpolatedVal = expinterpolate(y0, yN, t, n) / 2
+    textItem3.style.opacity = interpolatedVal
+}
+
+function popItem4() {
+    let addBy = 1200 * (window.scrollY / 2500)
+    addBy = Math.min(Math.max(addBy, 0), 1200)
+    let xPos = (-1000 + addBy)
+    image4.style.transform = `translateX(${xPos}px) translateY(0px)`
+    let y0 = 1
+    let yN = 2
+    let t = window.scrollY - 1933
+    let n = 2500 - 1933
+
+    let interpolatedVal = expinterpolate(y0, yN, t, n) / 2
+    image4.style.opacity = interpolatedVal
+}
+
+function popTextItem4() {
+    let negateBy = 2015 * (window.scrollY / 2500)
+    negateBy = Math.min(Math.max(negateBy, 0), 2015)
+    let xPos =  3000 - negateBy
+    textItem4.style.transform = `translateX(${xPos}px) translateY(-100px)`
+    let y0 = 1
+    let yN = 2
+    let t = window.scrollY - 1933
+    let n = 2500 - 1933
+
+    let interpolatedVal = expinterpolate(y0, yN, t, n) / 2
+    textItem4.style.opacity = interpolatedVal
+}
+
+function popItem5() {
+    let negateBy = 900 * (window.scrollY / 3122)
+    negateBy = Math.min(Math.max(negateBy, 0), 900)
+    let xPos = (2000 - negateBy)
+    image5.style.transform = `translateX(${xPos}px) translateY(0px)`
+    let y0 = 1
+    let yN = 2
+    let t = window.scrollY - 2524
+    let n = 3122 - 2596
+
+    let interpolatedVal = expinterpolate(y0, yN, t, n) / 2
+    image5.style.opacity = interpolatedVal
+}
+
+function popTextItem5() {
+    let addBy = 400 * (window.scrollY / 3122)
+    addBy = Math.min(Math.max(addBy, 0), 400)
+    let xPos = -200 + addBy
+    textItem5.style.transform = `translateX(${xPos}px) translateY(-100px)`
+    let y0 = 1
+    let yN = 2
+    let t = window.scrollY - 2524
+    let n = 3122 - 2596
+
+    let interpolatedVal = expinterpolate(y0, yN, t, n) / 2
+    textItem5.style.opacity = interpolatedVal
+}
+
+function popItem6() {
+    let addBy = 1200 * (window.scrollY / 3761)
+    addBy = Math.min(Math.max(addBy, 0), 1200)
+    let xPos = (-1000 + addBy)
+    image6.style.transform = `translateX(${xPos}px) translateY(0px)`
+    let y0 = 1
+    let yN = 2
+    let t = window.scrollY - 3239
+    let n = 3761 - 3239
+
+    let interpolatedVal = expinterpolate(y0, yN, t, n) / 2
+    image6.style.opacity = interpolatedVal
+}
+
+function popTextItem6() {
+    let negateBy = 2015 * (window.scrollY / 3761)
+    negateBy = Math.min(Math.max(negateBy, 0), 2015)
+    let xPos =  3000 - negateBy
+    textItem6.style.transform = `translateX(${xPos}px) translateY(-100px)`
+    let y0 = 1
+    let yN = 2
+    let t = window.scrollY - 3239
+    let n = 3761 - 3239
+
+    let interpolatedVal = expinterpolate(y0, yN, t, n) / 2
+    textItem6.style.opacity = interpolatedVal
+}
+
+function popItem7() {
+    let negateBy = 900 * (window.scrollY / 4375)
+    negateBy = Math.min(Math.max(negateBy, 0), 900)
+    let xPos = (2000 - negateBy)
+    image7.style.transform = `translateX(${xPos}px) translateY(0px)`
+    let y0 = 1
+    let yN = 2
+    let t = window.scrollY - 3796
+    let n = 4375 - 3796
+
+    let interpolatedVal = expinterpolate(y0, yN, t, n) / 2
+    image7.style.opacity = interpolatedVal
+}
+
+function popTextItem7() {
+    let addBy = 400 * (window.scrollY / 4375)
+    addBy = Math.min(Math.max(addBy, 0), 400)
+    let xPos = -200 + addBy
+    textItem7.style.transform = `translateX(${xPos}px) translateY(-100px)`
+    let y0 = 1
+    let yN = 2
+    let t = window.scrollY - 3796
+    let n = 4375 - 3796
+
+    let interpolatedVal = expinterpolate(y0, yN, t, n) / 2
+    textItem7.style.opacity = interpolatedVal
+}
+
+function popItem8() {
+    let addBy = 1200 * (window.scrollY / 4910)
+    addBy = Math.min(Math.max(addBy, 0), 1200)
+    let xPos = (-1000 + addBy)
+    image8.style.transform = `translateX(${xPos}px) translateY(0px)`
+    let y0 = 1
+    let yN = 2
+    let t = window.scrollY - 4340
+    let n = 4910 - 4340
+
+    let interpolatedVal = expinterpolate(y0, yN, t, n) / 2
+    image8.style.opacity = interpolatedVal
+}
+
+function popTextItem8() {
+    let negateBy = 2015 * (window.scrollY / 4910)
+    negateBy = Math.min(Math.max(negateBy, 0), 2015)
+    let xPos =  3000 - negateBy
+    textItem8.style.transform = `translateX(${xPos}px) translateY(-100px)`
+    let y0 = 1
+    let yN = 2
+    let t = window.scrollY - 4340
+    let n = 4910 - 4340
+
+    let interpolatedVal = expinterpolate(y0, yN, t, n) / 2
+    textItem8.style.opacity = interpolatedVal
+}
+
+function popItem9() {
+    let negateBy = 900 * (window.scrollY / 5567)
+    negateBy = Math.min(Math.max(negateBy, 0), 900)
+    let xPos = (2000 - negateBy)
+    image9.style.transform = `translateX(${xPos}px) translateY(0px)`
+    let y0 = 1
+    let yN = 2
+    let t = window.scrollY - 5066
+    let n = 5567 - 5066
+
+    let interpolatedVal = expinterpolate(y0, yN, t, n) / 2
+    image9.style.opacity = interpolatedVal
+}
+
+function popTextItem9() {
+    let addBy = 400 * (window.scrollY / 5567)
+    addBy = Math.min(Math.max(addBy, 0), 400)
+    let xPos = -200 + addBy
+    textItem9.style.transform = `translateX(${xPos}px) translateY(-100px)`
+    let y0 = 1
+    let yN = 2
+    let t = window.scrollY - 5066
+    let n = 5567 - 5066
+
+    let interpolatedVal = expinterpolate(y0, yN, t, n) / 2
+    textItem9.style.opacity = interpolatedVal
 }
 
 function quotePop() {
@@ -163,6 +388,9 @@ function asalPop() {
 let CIP1 = document.getElementById("culinaryItem1")
 let CIP2 = document.getElementById("culinaryItem2")
 let CIP3 = document.getElementById("culinaryItem3")
+let CIP4 = document.getElementById("culinaryItem4")
+let CIP5 = document.getElementById("culinaryItem5")
+let CIP6 = document.getElementById("culinaryItem6")
 let Loc1 = document.getElementById("location1")
 let Loc2 = document.getElementById("location2")
 
@@ -196,6 +424,36 @@ CIP3.addEventListener("mouseleave", () => {
    CIP3.style.cursor = 'default'
 })
 
+CIP4.addEventListener("mouseover", () => {
+   CIP4.style.transform = `scale(1.05)`
+   CIP4.style.cursor = 'pointer'
+})
+
+CIP4.addEventListener("mouseleave", () => {
+   CIP4.style.transform = `scale(1.0)`
+   CIP4.style.cursor = 'default'
+})
+
+CIP5.addEventListener("mouseover", () => {
+   CIP5.style.transform = `scale(1.05)`
+   CIP5.style.cursor = 'pointer'
+})
+
+CIP5.addEventListener("mouseleave", () => {
+   CIP5.style.transform = `scale(1.0)`
+   CIP5.style.cursor = 'default'
+})
+
+CIP6.addEventListener("mouseover", () => {
+   CIP6.style.transform = `scale(1.05)`
+   CIP6.style.cursor = 'pointer'
+})
+
+CIP6.addEventListener("mouseleave", () => {
+   CIP6.style.transform = `scale(1.0)`
+   CIP6.style.cursor = 'default'
+})
+
 Loc1.addEventListener("mouseover", () => {
     Loc1.style.color = 'blue'
     Loc1.style.cursor = 'pointer'
@@ -227,13 +485,25 @@ Loc2.addEventListener("click", () => {
 function culinaryOp() {
     let y0 = 1
     let yN = 2
-    let t = window.scrollY - 1621
-    let n = 2233 - 1621
+    let t = window.scrollY - 5551
+    let n = 6438 - 5551
 
     let interpolatedVal = expinterpolate(y0, yN, t, n) / 2
     CIP1.style.opacity = interpolatedVal
     CIP2.style.opacity = interpolatedVal
     CIP3.style.opacity = interpolatedVal
+}
+
+function culinaryOp1() {
+    let y0 = 1
+    let yN = 2
+    let t = window.scrollY - 6438
+    let n = 6770 - 6438
+
+    let interpolatedVal = expinterpolate(y0, yN, t, n) / 2
+    CIP4.style.opacity = interpolatedVal
+    CIP5.style.opacity = interpolatedVal
+    CIP6.style.opacity = interpolatedVal
 }
 
 function expinterpolate(y0, yN, t, n) {
@@ -261,6 +531,6 @@ let flicker = setInterval(() => {
 
 setInterval(() => {
     console.log(window.scrollY)
-}, 1000)
+}, 100)
 
 //918
